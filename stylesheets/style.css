@@ -17,8 +17,24 @@ body {
     justify-items: center;
 }
 
+.header {
+    margin-top: 1em;
+    display: grid;
+    justify-items: center;
+    
+}
+
+.header p {
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: helvetica, sans-serif;
+}
+
 .player {
     height: calc(100vh - 145px);
+    align-self: center;
+    padding-top: 5em;
+    background-image: url(images/player_bkg.jpg);
 }
 
 .nav {
@@ -27,7 +43,7 @@ body {
     grid-template-columns: repeat(4, 25%);
     justify-items: center;
     position: fixed;
-    top: calc(100vh - 51px);
+    top: calc(100vh - 130px);
 } 
 
 .nav img {
