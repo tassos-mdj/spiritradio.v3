@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.player {
+    height: calc(100vh - 145px);
+}
+
+.nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
+    position: fixed;
+    top: calc(100vh - 51px);
+} 
+
+.nav img {
+    width: 48px;
+}
