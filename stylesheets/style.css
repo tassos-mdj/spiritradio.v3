@@ -18,24 +18,26 @@ body {
 }
 
 .container {
-    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 2em 0;
 }
 
-.player {
+.headerspace{
+  min-height: 103px;
+  display:block;
+}
+
+.player , .messaging {
     height: calc(100vh - 145px);
     padding-top: 5em;
 }
 
+
+
 /* Play button */
 
-.playerbutton{
-    /* position: absolute; */
-    
-}
 
 input {
     opacity: 0;
