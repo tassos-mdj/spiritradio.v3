@@ -37,6 +37,8 @@ body {
     padding-top: 5em;
 }
 
+/* Wrapper Checkbox */
+
 
 
 /* Play button */
@@ -84,7 +86,7 @@ input {
     translate: 6% 0;
   }
   
-  .playerbutton:has(input:checked) .play_pause_icon,
+  .playbutton:has(input:checked) .play_pause_icon,
   .pause {
     clip-path: polygon(
       0 0,
@@ -121,7 +123,7 @@ input {
 
   .loader {
     height: 70px;
-    display:flex;
+    /* display:flex; */
     align-items: center;
     justify-content: center;
     margin-top: 30px;
