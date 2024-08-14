@@ -185,7 +185,9 @@ input {
     grid-template-columns: repeat(4, 25%);
     justify-items: center;
     position: fixed;
-    top: calc(100vh - 51px - 2em);
+    /* top: calc(100vh - 51px - 2em); */
+    left: 0;
+    bottom: 10px;
 } 
 
 .nav img {
