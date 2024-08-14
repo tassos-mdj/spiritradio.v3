@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +13,14 @@
     <div class="container">
         <div class="headerspace" id="headerspace"></div>
         <div class="player" id="player">
+            <audio src="https://a8.asurahosting.com:7260/radio.mp3">Το πρόγραμμα προβολής σας δεν υποστηρίζει τον ενσωματωμένο ήχο. Πατήστε εδώ για τον εξωτερικό player.</audio>
             <div class="playbutton">
                 <label for="checkbox" id="checkbox_label">
                     <div class="play_pause_icon play"></div>
                 </label>
                 <input type="checkbox" id='checkbox'>
             </div>
+            <div class="now-playing"></div>
             <div class="loader">
                 <span class="stroke"></span>
                 <span class="stroke"></span>
@@ -28,15 +30,17 @@
                 <span class="stroke"></span>
                 <span class="stroke"></span>
             </div>
+            
         </div>
         <div class="messaging" id="messaging">
-
+            <div id="tlkio" data-channel="spiritradiogr" data-theme="theme--day" style="width:100%;height:calc(100vh - 200px);"></div>
+            <script async src="https://tlk.io/embed.js" type="text/javascript"></script>
         </div>
         
    </div>
    <div class="nav">
     <div class="navlink">
-        <a href="index.html#headerspace"><img src="./images/headphones.svg" alt="an image of headphones as a button to player section" /></a>
+        <a href="index.html#top"><img src="./images/headphones.svg" alt="an image of headphones as a button to player section" /></a>
     </div>
     <div class="navlink">
         <a href="index.html#messaging"><img src="./images/message-circle.svg" alt="an image of messaging bubble as a button to messaging section" /></a>
