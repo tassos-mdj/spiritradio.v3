@@ -3,16 +3,15 @@ const loader = document.querySelector(".loader");
 const audio = document.querySelector("audio");
 loader.style.display = "none";
 document.getElementById("checkbox_label").addEventListener("click", function() {
-    console.log("clicked!!!!");
     if (playCheckbox.checked == false) {
         loader.style.display = "flex";
         audio.play();
-        console.log(true);
+        
     } else {
         loader.style.display = "none";
         audio.pause();
         audio.load();
-        console.log(false);
+        
     }
 });
 
@@ -46,8 +45,7 @@ function get_now_playing() {
     .then(userData => {
         // Process the retrieved user data
         nowPlaying.textContent = userData.now_playing.song.text;
-        console.log(userData.now_playing.song.text);
-
+        
         })
     .catch(error => {
         console.error('Error:', error);

@@ -37,11 +37,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 3em;
 }
 
 .messaging {
   padding-top: 2em;
+  justify-self: stretch;
 }
 
 /* Play button */
@@ -189,6 +190,7 @@ input {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0 2em;
+  text-align: center;
 }
 
 .nav {
