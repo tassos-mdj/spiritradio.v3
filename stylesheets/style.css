@@ -16,6 +16,9 @@ body {
     position: fixed;
     top: 15px;
     left: calc((100vw - 300px) / 2);
+    background-color: white;
+    opacity: 1;
+    z-index: 99;
 }
 
 .container {
@@ -201,8 +204,16 @@ input {
     position: fixed;
     left: 0;
     bottom: 10px;
+    background-color: white;
+    z-index: 99;
 } 
 
 .nav img {
     width: 48px;
+}
+
+.messaging p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
