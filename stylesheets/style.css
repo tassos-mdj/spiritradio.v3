@@ -44,7 +44,7 @@ body {
 }
 
 .messaging {
-  padding-top: 2em;
+  padding-top: 8em;
   justify-self: stretch;
 }
 
@@ -213,6 +213,7 @@ input {
 }
 
 .messaging p {
+    font-size: 1,2rem;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
