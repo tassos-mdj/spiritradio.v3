@@ -218,3 +218,16 @@ input {
     justify-content: center;
     margin-bottom: 50px;
 }
+
+.messaging ul {
+    margin: 0 2em;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.messaging li {
+    text-wrap: wrap;
+}
