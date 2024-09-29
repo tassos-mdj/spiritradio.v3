@@ -231,3 +231,11 @@ input {
 .messaging li {
     text-wrap: wrap;
 }
+
+.shows {
+  display: grid;
+  justify-self: stretch;
+  gap: 2rem;
+  margin: 0 1em;
+  
+}
