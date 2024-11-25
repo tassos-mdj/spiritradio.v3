@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/style.css?v=2">
     <title>Spirit Radio</title>
 </head>
 <body>
     <div class="header">
         <img src="./images/logo.png" alt="Spirit Radio logo">
     </div>
-    
-    
-
-    
     <div class="container">
 
     <!--modal-->
@@ -22,13 +18,16 @@
             <button class="btn-close" onclick="closeModal()">X</button>
         </div>
         <img src="./images/poster.jpeg" alt="Back to the 80s poster">
+        <audio src="./spot.mp3" controls id="modal-audio">Το πρόγραμμα προβολής σας δεν υποστηρίζει τον ενσωματωμένο ήχο. Πατήστε εδώ για τον εξωτερικό player.</audio>
+            
+        
     </section>
     <div class="overlay hidden"></div>
     <!-- modal end-->
 
         <div class="headerspace" id="headerspace"></div>
         <div class="player" id="player">
-            <audio src="https://a8.asurahosting.com:7260/radio.mp3">Το πρόγραμμα προβολής σας δεν υποστηρίζει τον ενσωματωμένο ήχο. Πατήστε εδώ για τον εξωτερικό player.</audio>
+            <audio src="https://a8.asurahosting.com:7260/radio.mp3" id="live-stream">Το πρόγραμμα προβολής σας δεν υποστηρίζει τον ενσωματωμένο ήχο. Πατήστε εδώ για τον εξωτερικό player.</audio>
             <div class="playbutton">
                 <label for="checkbox" id="checkbox_label">
                     <div class="play_pause_icon play"></div>
@@ -72,6 +71,6 @@
         <a href="shows.html"><img src="./images/archive.svg" alt="an image of archive box as a button to shows archive page"></a>
     </div>
 </div>
-<script src="./script.js"></script>
+<script src="./script.js?v=3"></script>
 </body>
 </html>

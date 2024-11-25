@@ -1,6 +1,6 @@
 const playCheckbox = document.getElementById("checkbox");
 const loader = document.querySelector(".loader");
-const audio = document.querySelector("audio");
+const audio = document.querySelector("#live-stream");
 loader.style.display = "none";
 document.getElementById("checkbox_label").addEventListener("click", function () {
     if (playCheckbox.checked == false) {
@@ -60,23 +60,19 @@ get_now_playing();
 //modal functionality
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-// const closeModalBtn = document.querySelector(".btn-close");
-
+const audio2 = document.querySelector("#modal-audio");
 const openModal = function () {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
 };
-
 const closeModal = function () {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
+    audio2.pause();
 };
-
+window.addEventListener("keydown", function (e) {
+    closeModal()});
 document.onload(openModal());
-closeModalBtn.addEventListener("click", closeModal());
 
-document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-        closeModal();
-    }
-});
+
+

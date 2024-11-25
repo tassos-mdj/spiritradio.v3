@@ -18,7 +18,7 @@ body {
     left: calc((100vw - 300px) / 2);
     background-color: white;
     opacity: 1;
-    z-index: 99;
+    z-index: 1.9;
 }
 
 .container {
@@ -205,7 +205,7 @@ input {
     left: 0;
     bottom: 10px;
     background-color: white;
-    z-index: 99;
+    z-index: 1.9;
 } 
 
 .nav img {
@@ -216,7 +216,11 @@ input {
     font-size: 1,2rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px
+    
+
+    
+    ;
 }
 
 .messaging ul {
@@ -247,9 +251,9 @@ input {
   flex-direction: column;
   justify-content: center;
   gap: 0.4rem;
-  width: 450px;
+  max-width: 90%;
   padding: 1.3rem;
-  min-height: 250px;
+  max-height: 90vh;
   position: absolute;
   top: 20%;
   background-color: white;
@@ -259,10 +263,18 @@ input {
   transform: translate(0, -50px);
 }
 
+img {
+  max-height: 70vh;
+}
+
 .modal .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#modal-audio {
+  width: 100%;
 }
 
 button {
