@@ -240,11 +240,11 @@ input {
   display: grid;
   justify-self: stretch;
   gap: 2rem;
-  margin: 0 1em;
+  margin: 0 1em 1em 1em;
   
 }
 
-/* Modal styling */
+/* Modal styling
 
 .modal {
   display: flex;
@@ -323,4 +323,4 @@ button {
 
 .hidden {
   display: none;
-}
+} */
