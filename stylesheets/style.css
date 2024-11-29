@@ -240,8 +240,8 @@ input {
   display: grid;
   justify-self: stretch;
   gap: 2rem;
-  margin: 0 1em 1em 1em;
-  
+  margin: 0 1em;
+  margin-bottom: 2em;
 }
 
 /* Modal styling
