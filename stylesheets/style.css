@@ -61,6 +61,7 @@ body {
 .messaging {
   padding-top: 0em;
   justify-self: stretch;
+  margin-bottom: 20px;
 }
 
 /* Play button */
