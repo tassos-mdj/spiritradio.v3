@@ -14,20 +14,34 @@ body {
 
 .header {
     position: fixed;
-    top: 15px;
-    left: calc((100vw - 300px) / 2);
+    top: 0px;
+    padding-top: 15px;
+    width: 100%;
     background-color: white;
     opacity: 1;
     z-index: 1.9;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 103px calc(100vh - 145px) calc(100vh - 145px);
+    grid-template-rows: calc(100vh - 171px);
+    justify-items: center;
+    align-items: start;
+    padding: 2em 0;
+}
+
+.container-shows {
+    display: grid;
+    grid-template-columns: 1fr;
     justify-items: center;
     padding: 2em 0;
 }
+
+
 
 .headerspace{
   min-height: 103px;
@@ -36,16 +50,18 @@ body {
 }
 
 .player {
-  padding-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: stretch;
   gap: 3em;
+  padding-top: 4em;
 }
 
 .messaging {
-  padding-top: 8em;
+  padding-top: 0em;
   justify-self: stretch;
+  margin-bottom: 5em;
 }
 
 /* Play button */
@@ -203,7 +219,8 @@ input {
     justify-items: center;
     position: fixed;
     left: 0;
-    bottom: 10px;
+    bottom: 0px;
+    padding-bottom: 10px;
     background-color: white;
     z-index: 1.9;
 } 
@@ -216,15 +233,15 @@ input {
     font-size: 1,2rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px
-    
+    margin-top: -2em;
+    font-size: 0.7rem;
 
-    
-    ;
+
 }
 
 .messaging ul {
     margin: 0 2em;
+    margin-top: -2em;
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
@@ -234,6 +251,7 @@ input {
 
 .messaging li {
     text-wrap: wrap;
+    font-size: 0.7rem;
 }
 
 .shows {
@@ -241,7 +259,7 @@ input {
   justify-self: stretch;
   gap: 2rem;
   margin: 0 1em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 /* Modal styling
