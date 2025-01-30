@@ -57,22 +57,22 @@ function get_now_playing() {
 get_now_playing();
 
 
-// //modal functionality
-// const modal = document.querySelector(".modal");
-// const overlay = document.querySelector(".overlay");
+//modal functionality
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
 // const audio2 = document.querySelector("#modal-audio");
-// const openModal = function () {
-//     modal.classList.remove("hidden");
-//     overlay.classList.remove("hidden");
-// };
-// const closeModal = function () {
-//     modal.classList.add("hidden");
-//     overlay.classList.add("hidden");
-//     audio2.pause();
-// };
-// window.addEventListener("keydown", function (e) {
-//     closeModal()});
-// document.onload(openModal());
+const openModal = function () {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+};
+const closeModal = function () {
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+    // audio2.pause();
+};
+window.addEventListener("keydown", function (e) {
+    closeModal()});
+document.onload(openModal());
 
 
 

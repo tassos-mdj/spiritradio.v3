@@ -259,7 +259,7 @@ input {
   margin-bottom: 4em;
 }
 
-/* Modal styling
+/* Modal styling*/
 
 .modal {
   display: flex;
@@ -338,4 +338,4 @@ button {
 
 .hidden {
   display: none;
-} */
+} 
