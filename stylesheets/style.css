@@ -261,7 +261,7 @@ input {
 
 /* Modal styling*/
 
-/* .modal {
+.modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -338,4 +338,4 @@ button {
 
 .hidden {
   display: none;
-}  */
+} 
